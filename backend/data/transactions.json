@@ -1,0 +1,173 @@
+[
+  {
+    "id": 1,
+    "message": "Paid Rs.250 to Zomato",
+    "amount": -250,
+    "date": "2026-06-28",
+    "category": "Food",
+    "type": "Expense",
+    "expectedSavings": 0
+  },
+  {
+    "id": 2,
+    "message": "Ordered dinner from Swiggy Rs.430",
+    "amount": -430,
+    "date": "2026-06-27",
+    "category": "Food",
+    "type": "Expense",
+    "expectedSavings": 0
+  },
+  {
+    "id": 3,
+    "message": "KFC lunch combo Rs.350",
+    "amount": -350,
+    "date": "2026-06-26",
+    "category": "Food",
+    "type": "Expense",
+    "expectedSavings": 0
+  },
+  {
+    "id": 4,
+    "message": "Uber ride to airport Rs.350",
+    "amount": -350,
+    "date": "2026-06-26",
+    "category": "Travel",
+    "type": "Expense",
+    "expectedSavings": 0
+  },
+  {
+    "id": 5,
+    "message": "Ola cab ride Rs.220",
+    "amount": -220,
+    "date": "2026-06-25",
+    "category": "Travel",
+    "type": "Expense",
+    "expectedSavings": 0
+  },
+  {
+    "id": 6,
+    "message": "Rapido bike ride Rs.75",
+    "amount": -75,
+    "date": "2026-06-25",
+    "category": "Travel",
+    "type": "Expense",
+    "expectedSavings": 0
+  },
+  {
+    "id": 7,
+    "message": "Amazon shopping order Rs.1499",
+    "amount": -1499,
+    "date": "2026-06-24",
+    "category": "Shopping",
+    "type": "Expense",
+    "expectedSavings": 0
+  },
+  {
+    "id": 8,
+    "message": "Flipkart purchase Rs.899",
+    "amount": -899,
+    "date": "2026-06-23",
+    "category": "Shopping",
+    "type": "Expense",
+    "expectedSavings": 0
+  },
+  {
+    "id": 9,
+    "message": "Bought headphones on Amazon Pay reward Rs.1200",
+    "amount": -1200,
+    "date": "2026-06-22",
+    "category": "Shopping",
+    "type": "Expense",
+    "expectedSavings": 60
+  },
+  {
+    "id": 10,
+    "message": "Monthly salary credited by company payroll",
+    "amount": 65000,
+    "date": "2026-06-01",
+    "category": "Salary",
+    "type": "Income",
+    "expectedSavings": 0
+  },
+  {
+    "id": 11,
+    "message": "Office salary bonus from employer",
+    "amount": 8000,
+    "date": "2026-06-15",
+    "category": "Salary",
+    "type": "Income",
+    "expectedSavings": 0
+  },
+  {
+    "id": 12,
+    "message": "Electricity bill payment Rs.1200",
+    "amount": -1200,
+    "date": "2026-06-20",
+    "category": "Bills",
+    "type": "Expense",
+    "expectedSavings": 0
+  },
+  {
+    "id": 13,
+    "message": "Mobile recharge Rs.299 with PhonePe cashback",
+    "amount": -299,
+    "date": "2026-06-19",
+    "category": "Bills",
+    "type": "Expense",
+    "expectedSavings": 14.95
+  },
+  {
+    "id": 14,
+    "message": "Movie tickets on BookMyShow Rs.500",
+    "amount": -500,
+    "date": "2026-06-18",
+    "category": "Entertainment",
+    "type": "Expense",
+    "expectedSavings": 0
+  },
+  {
+    "id": 15,
+    "message": "Netflix subscription Rs.649",
+    "amount": -649,
+    "date": "2026-06-17",
+    "category": "Entertainment",
+    "type": "Expense",
+    "expectedSavings": 0
+  },
+  {
+    "id": 16,
+    "message": "Paid Rs.800 at restaurant using GPay cashback",
+    "amount": -800,
+    "date": "2026-06-16",
+    "category": "Miscellaneous",
+    "type": "Expense",
+    "expectedSavings": 40
+  },
+  {
+    "id": 17,
+    "message": "House rent transfer Rs.12000",
+    "amount": -12000,
+    "date": "2026-06-05",
+    "category": "Miscellaneous",
+    "type": "Expense",
+    "expectedSavings": 0
+  },
+  {
+    "id": 18,
+    "message": "Money received from friend transfer Rs.1500",
+    "amount": 1500,
+    "date": "2026-06-14",
+    "category": "Miscellaneous",
+    "type": "Income",
+    "expectedSavings": 0
+  },
+  {
+    "id": 19,
+    "message": "Received PhonePe Cashback Rs.60",
+    "amount": 60,
+    "date": "2026-06-13",
+    "category": "Miscellaneous",
+    "type": "Income",
+    "expectedSavings": 0
+  }
+]
