@@ -1,14 +1,5 @@
 [
   {
-    "id": 1,
-    "message": "Paid Rs.250 to Zomato",
-    "amount": -250,
-    "date": "2026-06-28",
-    "category": "Food",
-    "type": "Expense",
-    "expectedSavings": 0
-  },
-  {
     "id": 2,
     "message": "Ordered dinner from Swiggy Rs.430",
     "amount": -430,
@@ -168,6 +159,24 @@
     "date": "2026-06-13",
     "category": "Miscellaneous",
     "type": "Income",
+    "expectedSavings": 0
+  },
+  {
+    "id": 20,
+    "message": "ordered food",
+    "amount": -600,
+    "date": "2026-06-28",
+    "category": "Food",
+    "type": "Expense",
+    "expectedSavings": 0
+  },
+  {
+    "id": 21,
+    "message": "ordered books",
+    "amount": -999.99,
+    "date": "2026-06-28",
+    "category": "Entertainment",
+    "type": "Expense",
     "expectedSavings": 0
   }
 ]
