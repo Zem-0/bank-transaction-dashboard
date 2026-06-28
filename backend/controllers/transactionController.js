@@ -54,6 +54,8 @@ function normalizeTransaction(txn) {
       txn.message,
       txn.amount
     ),
+    // Fallback for older records saved before timestamps were tracked.
+    createdAt: txn.createdAt || `${txn.date}T00:00:00.000Z`,
   };
 }
 
@@ -182,6 +184,9 @@ async function addTransaction(req, res) {
         message,
         numericAmount
       ),
+      // Exact creation instant (UTC) — used to show the time and to keep
+      // newly added transactions at the top of the feed.
+      createdAt: new Date().toISOString(),
     };
 
     stored.push(newTransaction);

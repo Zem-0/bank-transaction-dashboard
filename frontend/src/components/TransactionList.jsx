@@ -46,18 +46,20 @@ export default function TransactionList({
       result = result.filter((t) => t.category === categoryFilter);
     }
 
-    // Sort by the chosen criterion.
+    // Sort by the chosen criterion. For date-based sorts we use the id as a
+    // tiebreaker (a higher id means it was added more recently), so a newly
+    // added transaction always appears at the very top of the feed.
     result.sort((a, b) => {
       switch (sortBy) {
         case 'oldest':
-          return new Date(a.date) - new Date(b.date);
+          return new Date(a.date) - new Date(b.date) || a.id - b.id;
         case 'highest':
           return Math.abs(b.amount) - Math.abs(a.amount);
         case 'lowest':
           return Math.abs(a.amount) - Math.abs(b.amount);
         case 'newest':
         default:
-          return new Date(b.date) - new Date(a.date);
+          return new Date(b.date) - new Date(a.date) || b.id - a.id;
       }
     });
 

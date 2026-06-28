@@ -76,3 +76,19 @@ export function formatDate(dateStr) {
     year: 'numeric',
   });
 }
+
+/**
+ * Format an ISO timestamp into a 12-hour time in IST (Indian Standard Time),
+ * e.g. "2026-06-28T05:30:00Z" -> "11:00 AM".
+ * @param {string} timestamp
+ */
+export function formatTime(timestamp) {
+  const date = new Date(timestamp);
+  if (Number.isNaN(date.getTime())) return '';
+  return date.toLocaleTimeString('en-IN', {
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: true,
+    timeZone: 'Asia/Kolkata',
+  });
+}

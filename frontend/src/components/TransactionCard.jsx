@@ -6,7 +6,12 @@
  */
 
 import { Trash2 } from 'lucide-react';
-import { getCategoryMeta, formatCurrency, formatDate } from '../utils/format';
+import {
+  getCategoryMeta,
+  formatCurrency,
+  formatDate,
+  formatTime,
+} from '../utils/format';
 import CategoryDropdown from './CategoryDropdown';
 import CategoryBadge from './CategoryBadge';
 import SavingsBadge from './SavingsBadge';
@@ -25,7 +30,8 @@ export default function TransactionCard({
   onDelete,
   isUpdating,
 }) {
-  const { id, message, amount, date, category, type, expectedSavings } = transaction;
+  const { id, message, amount, date, category, type, expectedSavings, createdAt } =
+    transaction;
 
   const meta = getCategoryMeta(category);
   const Icon = meta.icon;
@@ -44,7 +50,9 @@ export default function TransactionCard({
           <p className="truncate text-sm text-slate-500">{message}</p>
           <div className="mt-2 flex flex-wrap items-center gap-2">
             <CategoryBadge category={category} />
-            <span className="text-xs text-slate-400">{formatDate(date)}</span>
+            <span className="text-xs text-slate-400">
+              {formatDate(date)} · {formatTime(createdAt)} IST
+            </span>
             <SavingsBadge expectedSavings={expectedSavings} />
           </div>
         </div>
